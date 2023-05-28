@@ -1,0 +1,28 @@
+header { display: block; margin-bottom: 1px; }
+nav { display: block; width: 20%; float: left; }
+section { display: block; width: 70%; float: right; }
+body{background-color: #4488AA; font-family: Lucida Bright, liberation; color: #99EEEE; font-size: 16px;}
+a:link{color: #FFFFFF; text-decoration: none;}
+a:visited{color: #99EEEE; text-decoration: none;}
+.ender{float: right; text-align: right; line-height: 140%; font-size: 15px; font-family: Karla;}
+.ImgLogo{align-items:'left'; border-bottom: solid; border-width: 3px; border-color: #FFFFFF; margin-bottom: 6px; padding-bottom: 15px;}
+.apres{font-size: 18px;font-family:Stoke;}
+.ul{color: #FFFFFF; line-height: 230%; margin-top: 40px;font-family: Karla; font-size: 20px;
+    list-style-image: url(../img/BrilhoMark.png) } 
+#centralizado {text-align: center }
+
+
+#il{color: #99ffff;list-style-type: disc;line-height: 125%;margin-top: auto;}
+th,td{border-color: #226699; border: solid; border-width: 3px;padding: 6px 12px 6px 12px;}
+
+.listaTipos{color: #FFFFFF; padding: 10px 10px 10px 50px; line-height: 180%;}
+
+.tabInfo{border-collapse: collapse;margin-top: 6px; background-color: #FFFFFF; 
+    color: #000066; font-size: 15px; font-family: Karla;}
+    
+.linTH{color: #FFFFFF; background-color:#004499 ; padding: 6px 12px 6px 12px; border-color: #000066; vertical-align: middle;}
+
+#t1{
+    width: 340px;
+    height: 320px;
+}

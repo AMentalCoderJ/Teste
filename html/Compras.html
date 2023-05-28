@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AD2-Compras</title>
+
+<style>/**Parte de Compras**/ 
+    #logincad{width: 260px;}
+    #idemail{width: 160px;}
+    #senhacad{width: 180px;}
+    #lisselprod{width: 180px;}
+    #selproduto{width: 75%;}
+    #btnincluir{width: 70px;}
+    #boxpedidos{height: 100px;}
+    #lispedarea{height: 90%; width: 100%; margin-bottom: 7px;}
+    #fsbandeira{height: 80px; text-align: left; vertical-align: top;}
+    #numcartao{width:350px ; height: 35px; padding-top: 10px;}
+    #valcartao{width: 230px; height: 35px;}
+    #boxparcel{width: 230px; height: 30px;}
+    </style>
+    <link rel="stylesheet" href="../css/estilo4.css">
+
+</head>
+<header>
+
+    <img class="ImgLogo" src="../img/ResfGlobLogoDeitado.png">
+    <address class="ender">
+        Av. Novaya Zemlya, 1870 <br>
+        Cel:(21) 98765-4321 <br> 
+        <a href="contato@resfriglob.com.br">contato@resfriglob.com.br</a> 
+    
+    </address>
+
+</header>
+
+<body>
+    <nav>
+        <ul>
+
+            <li><a href="../Index.html" target="_self" >Apresentação</a></li>  
+            <li><a href="../html/Tipos.html" target="_self" >Tipos</a></li> 
+            <li><a href="../html/Estoque.html" target="_self" >Estoque</a></li>
+            <li><a href="../html/Cadastro.html" target="_self" >Cadastro</a></li> 
+            <li><a href="../html/Compras.html" target="_self" >Compras</a></li>
+        </ul>
+
+    </nav>
+<section class="apres">
+
+<form action="" class="FormBox">
+    
+        <br>
+Compras
+<br>
+<fieldset class="FSLinhaInteira">
+<legend>Identificação</legend>
+<label for="imail" class="LinhaForm" id="idemail">E-mail:     </label><input type="email" id="imail">
+
+<input type="password" class="InpBoxMed" maxlength="8" id="isen"><label for="isen" class="InpBoxMed">Senha:</label>
+<br>
+
+<label for=""><i>Se você ainda nao tem cadastro clique</i>  <a href="Cadastro.html" target="_self"><i>aqui!</i> </a></label>
+</fieldset>
+
+<div>
+<fieldset class="FSLinhaInteira">
+    <legend>Lista de Compras</legend>
+    <label for="">Produtos</label>
+
+
+
+    <select name="selProduto" id="">
+        <option value="">-------</option>
+
+
+<optgroup label="Split">
+    <option value="">Springer Split 12000</option>
+</optgroup>
+
+
+<optgroup label="Parede">
+    <option value="">Springer Midea 12000</option>
+    <option value="">Consul 7500</option>
+</optgroup>
+
+
+<optgroup label="Portatil">
+    <option value="">Elgin Eco Cube 9000</option>
+</optgroup>
+  </select>      
+
+
+<input type="button" class="InpBoxMed" id="btnincluir" value="Incluir" onClick="Incluirlista(this.form.selProduto);" />
+
+    <textarea name="listaPedidos" class="listaCompras" id="lispedarea" cols="" rows="5"   readonly ></textarea>
+
+<input type="text" class="InpBoxMed" id="TxtTotal" name="TxtTotal" value="0" readonly><label for="iv" class="InpBoxMed" id="">Valor: R$</label>
+
+
+<script src="../js/javascript.js"></script>
+
+
+
+</fieldset>
+</div>
+
+<fieldset class="FSLinhaInteira">
+    <legend>Dados do Cartão</legend>
+    <fieldset class="InpBoxMed" id="">
+<legend>Bandeira: </legend>
+<input type="radio" name="radio"> <label for="">Visa</label>  <br>
+<input type="radio" name="radio"><label for="">Master</label>  <br>
+<input type="radio" name="radio"><label for="">Elo</label> 
+</fieldset>
+
+<div class="sem">
+<label for="">Número: </label><input type="number" class="numDD">
+<input type="number" class="numDD">
+<input type="number" class="numDD">
+<input type="number" class="numDD">
+<br>
+</div>
+
+<label for="">Validade: </label>
+<input type="number" class="numDD" placeholder="1"> / 
+<input type="number" class="numQD" placeholder="2022">
+<br>
+<label for="">Parcelas: </label>
+<input type="number" class="numDD" placeholder="1"> X Sem Juros
+
+
+
+</fieldset>
+
+<div class="botoes">
+    <input type="submit" value="Confirmar" >
+      <input type="reset"  value="Limpar">
+    </div>
+
+
+
+
+
+
+
+
+
+
+</form>
+    
+
+</section>
+
+
+
+
+</body>
+
+</html>

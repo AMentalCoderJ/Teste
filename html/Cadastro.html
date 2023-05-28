@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AD2-Cadastro</title>
+    <link rel="stylesheet" href="../css/estilo3.css">
+</head>
+<header>
+    <img class="ImgLogo" src="../img/ResfGlobLogoDeitado.png">
+    <address class="ender">
+        Av. Novaya Zemlya, 1870 <br>
+        Cel:(21) 98765-4321 <br> 
+        <a href="contato@resfriglob.com.br">contato@resfriglob.com.br</a>    
+    </address>
+</header>
+<body>
+    <nav>
+        <ul >
+          <li><a href="../Index.html" target="_self" >Apresentação</a></li>  
+          <li><a href="../html/Tipos.html" target="_self" >Tipos</a></li> 
+          <li><a href="../html/Estoque.html" target="_self" >Estoque</a></li>
+          <li><a href="../html/Cadastro.html" target="_self" >Cadastro</a></li> 
+          <li><a href="../html/Compras.html" target="_self" >Compras</a></li>
+    </ul>
+    </nav>   
+
+
+<section class="apres">
+ 
+<form action="" class="FormBox">
+    <br>
+    Cadastro
+    <br><br>
+<fieldset class="FSLinhaInteira">
+    
+<legend class="LinhaForm">Identificação</legend><div>
+  <label for="iemail" class="LinhaForm">E-mail:</label>   
+   <input type="email" class="InpBoxGnd" name="email" id="iemail" required>
+    <br> <!---OK-->
+<br>
+</div>
+<div>
+   <label for="isenha" class="LabBox">Senha:</label>
+    <input type="password" name="senha" id="isenha" class="LabBox" >   <!---Not OK-->
+
+    
+      <input type="password" name="conf" id="iconf" class="InpBoxMed">
+       <label for="iconf" class="LabBox1">Confirme:</label>
+</div>
+
+
+</fieldset>
+
+<fieldset class="FSLinhaInteira">
+    
+    <legend class="LinhaForm">Dados Pessoais</legend><div>
+  <label for="inom" class="LinhaForm">Nome:   </label> 
+    <input type="text" class="InpBoxGnd" name="nom" id="inom"><br>
+  <br> 
+  <label for="iend" class="LinhaForm">Endereço:</label>
+
+    <textarea name="end" id="iend" cols="" rows="4" class="InpBoxGnd" ></textarea>
+    <br>
+           <br><br><br>
+
+</div>
+
+
+
+
+
+           
+<div>
+  <script src="../js/javascript.js"></script>
+     
+        <label for="itel" class="LabBox" >Telefone:</label> 
+         <input type="text" id="itel" class="LabBox" onChange="Verificartelefone(this, 8);" name="Telefone" required>
+    
+    
+     
+     <input type="text" class="InpBoxMed" id="icel" onChange="Verificartelefone(this, 9);" name="Celular" required>
+   <label for="icel" class="LabBox1">Celular:</label>
+
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <fieldset class="FSColEsq">
+        <legend>Nascimento:</legend>                
+   <input type="number" class="numDD" id=""> / 
+   <input type="number" class="numDD" id=""> / 
+   <input type="number" class="numQD" id="" placeholder="1980"></fieldset>
+     
+
+   <fieldset class="FSColDir"><legend >Sexo:</legend>
+<input type="radio" name="radio" id="imas"><label for="imas">Mas</label> 
+<input type="radio" name="radio" id="ifem"> <label for="ifem">Fem</label>
+<input type="radio" name="radio" id="iout"> <label for="iout">Outro</label> </fieldset>
+
+
+</fieldset>
+<div class="botoes">
+<input type="submit" value="Cadastrar" >
+  <input type="reset"  value="Limpar">
+</div>
+</form>
+
+</section>
+
+
+
+
+
+
+</body>
+
+</html>
